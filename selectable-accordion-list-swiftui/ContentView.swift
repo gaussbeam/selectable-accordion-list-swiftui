@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = SelectableAccordionListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(viewModel.accordionData, children: \.children) { item in
+            HStack {
+                Text(item.name)
+                item.hasChild ? nil : Spacer()
+                isSelected(item) ? Image(systemName: "checkmark") : nil
+            }.contentShape(Rectangle())
+            .onTapGesture {
+                viewModel.set(selected: item)
+            }
         }
-        .padding()
+    }
+    
+    private func isSelected(_ item: Item) -> Bool {
+        viewModel.selected == item
     }
 }
 

@@ -11,6 +11,8 @@
 		E602842E2AD7C80400249F24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E602842D2AD7C80400249F24 /* ContentView.swift */; };
 		E60284302AD7C80C00249F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E602842F2AD7C80C00249F24 /* Assets.xcassets */; };
 		E60284332AD7C80C00249F24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60284322AD7C80C00249F24 /* Preview Assets.xcassets */; };
+		E602843B2AD7C8D700249F24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E602843A2AD7C8D700249F24 /* Item.swift */; };
+		E602843E2AD7CB1600249F24 /* SelectableAccordionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E602843D2AD7CB1600249F24 /* SelectableAccordionListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E602842D2AD7C80400249F24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E602842F2AD7C80C00249F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60284322AD7C80C00249F24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E602843A2AD7C8D700249F24 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E602843D2AD7CB1600249F24 /* SelectableAccordionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableAccordionListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		E602842A2AD7C80400249F24 /* selectable-accordion-list-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				E602843C2AD7CAF500249F24 /* ViewModel */,
+				E60284392AD7C8C600249F24 /* Model */,
 				E602842B2AD7C80400249F24 /* selectable_accordion_list_swiftuiApp.swift */,
 				E602842D2AD7C80400249F24 /* ContentView.swift */,
 				E602842F2AD7C80C00249F24 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				E60284322AD7C80C00249F24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E60284392AD7C8C600249F24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E602843A2AD7C8D700249F24 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E602843C2AD7CAF500249F24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E602843D2AD7CB1600249F24 /* SelectableAccordionListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E602842E2AD7C80400249F24 /* ContentView.swift in Sources */,
+				E602843B2AD7C8D700249F24 /* Item.swift in Sources */,
 				E602842C2AD7C80400249F24 /* selectable_accordion_list_swiftuiApp.swift in Sources */,
+				E602843E2AD7CB1600249F24 /* SelectableAccordionListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
